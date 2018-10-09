@@ -28,14 +28,14 @@ let bigPoints2 = 0;
 //big
 ctx.font = "50px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
-ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
+ctx.fillText(smallPoints1,210,350);
+ctx.fillText(smallPoints2,610,350);
 
 //small
 ctx.font = "20px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(bigPoints1,window.innerWidth/2-390,900);
-ctx.fillText(bigPoints2,window.innerWidth/2+260,900);;
+ctx.fillText(bigPoints1,245,400);
+ctx.fillText(bigPoints2,645,400);;
 
 
 //design
@@ -45,15 +45,34 @@ ctx.fill();
 
 
 //choose between 501 and 301
-ctx.fillStyle = "darkred";
-ctx.rect(0, window.innerHeight-100, 100, 100);
-ctx.rect(window.innerWidth-100, window.innerHeight-100, 100, 100);
-ctx.fill();
+let threeoneButton = new CanvasSubmit(canvas, {
+	x: 0, 
+	y: window.innerHeight-100,
+	width: 100,
+	height: 100,
+	placeholder: '301',
+	onSubmit: (function(){
+		smallPoints1 = 301;
+		smallPoints2 = 301;
+	})
+})
+
+let fiveoneButton = new CanvasSubmit(canvas, {
+	x: window.innerWidth-100, 
+	y: window.innerHeight-100,
+	width: 100,
+	height: 100,
+	placeholder: '501',
+	onSubmit: (function(){
+		smallPoints1 = 501;
+		smallPoints2 = 501;
+	})
+})
 
 
 //input
 let input4player1 = new CanvasText( canvas, {
-    x: 300,
+    x: 200,
     y: 500,
     width: 100,
     placeholder: 0
@@ -61,7 +80,7 @@ let input4player1 = new CanvasText( canvas, {
 
 //input
 let input4player2 = new CanvasText( canvas, {
-    x: 500,
+    x: 600,
     y: 500,
     width: 100,
     placeholder: 0
@@ -88,17 +107,17 @@ let submitbutton = new CanvasSubmit( canvas, {
 
     		ctx.clearRect(500,175,860,300);
 
-    		//Display current points
-		//big
-		ctx.font = "50px Arial";
-		ctx.fillStyle = "black"
-		ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
-		ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
+	    	//Display current points
+			//big
+			ctx.font = "50px Arial";
+			ctx.fillStyle = "black"
+			ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
+			ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
 
-    		ctx.font = "20px Arial";
-		ctx.fillStyle = "black"
-		ctx.fillText(bigPoints1,window.innerWidth/2-390,1000);
-		ctx.fillText(bigPoints2,window.innerWidth/2+260,1000);
+	    	ctx.font = "20px Arial";
+			ctx.fillStyle = "black"
+			ctx.fillText(bigPoints1,window.innerWidth/2-390,1000);
+			ctx.fillText(bigPoints2,window.innerWidth/2+260,1000);
     	}
     } )
 } );
