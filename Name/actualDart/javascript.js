@@ -47,7 +47,7 @@ ctx.fill();
 //choose between 501 and 301
 let threeoneButton = new CanvasSubmit(canvas, {
 	x: 0, 
-	y: window.innerHeight,
+	y: window.innerHeight-100,
 	width: 100,
 	height: 100,
 	placeholder: '301',
@@ -58,8 +58,8 @@ let threeoneButton = new CanvasSubmit(canvas, {
 })
 
 let fiveoneButton = new CanvasSubmit(canvas, {
-	x: window.innerWidth, 
-	y: window.innerHeight,
+	x: window.innerWidth-100, 
+	y: window.innerHeight-100,
 	width: 100,
 	height: 100,
 	placeholder: '501',
