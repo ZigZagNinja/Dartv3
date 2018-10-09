@@ -28,14 +28,14 @@ let bigPoints2 = 0;
 //big
 ctx.font = "60px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(smallPoints1,210,300);
-ctx.fillText(smallPoints2,610,300);
+ctx.fillText(smallPoints1,235,300);
+ctx.fillText(smallPoints2,635,300);
 
 //small
 ctx.font = "30px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(bigPoints1,245,350);
-ctx.fillText(bigPoints2,645,350);
+ctx.fillText(bigPoints1,280,350);
+ctx.fillText(bigPoints2,680,350);
 
 
 //design
@@ -44,7 +44,6 @@ ctx.rect(0, 0, window.innerWidth, 150);
 ctx.fill();
 
 
-//choose between 501 and 301
 //choose between 501 and 301
 let threeoneButton = new CanvasSubmit(canvas, {
 	x: 0, 
@@ -73,7 +72,7 @@ let fiveoneButton = new CanvasSubmit(canvas, {
 
 //input
 let input4player1 = new CanvasText( canvas, {
-    x: 200,
+    x: 225,
     y: 450,
     width: 100,
     placeholder: 0
@@ -81,14 +80,14 @@ let input4player1 = new CanvasText( canvas, {
 
 //input
 let input4player2 = new CanvasText( canvas, {
-    x: 600,
+    x: 625,
     y: 450,
     width: 100,
     placeholder: 0
 } );
 
 let submitbutton = new CanvasSubmit( canvas, {
-    x: 345,
+    x: 375,
     y: 450,
     width: 200,
     height: 25,
