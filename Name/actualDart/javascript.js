@@ -54,6 +54,22 @@ let threeoneButton = new CanvasSubmit(canvas, {
 	onSubmit: (function(){
 		smallPoints1 = 301;
 		smallPoints2 = 301;
+		
+		ctx.clearRect(150,200,600,200);
+    	
+
+	    	//Display current points
+			//big
+			ctx.font = "60px Arial";
+			ctx.fillStyle = "black"
+			ctx.fillText(smallPoints1,235,300);
+			ctx.fillText(smallPoints2,635,300);
+
+			//small
+			ctx.font = "30px Arial";
+			ctx.fillStyle = "black"
+			ctx.fillText(bigPoints1,280,350);
+			ctx.fillText(bigPoints2,680,350);
 	})
 })
 
@@ -66,6 +82,22 @@ let fiveoneButton = new CanvasSubmit(canvas, {
 	onSubmit: (function(){
 		smallPoints1 = 501;
 		smallPoints2 = 501;
+		
+		ctx.clearRect(150,200,600,200);
+    	
+
+	    	//Display current points
+			//big
+			ctx.font = "60px Arial";
+			ctx.fillStyle = "black"
+			ctx.fillText(smallPoints1,235,300);
+			ctx.fillText(smallPoints2,635,300);
+
+			//small
+			ctx.font = "30px Arial";
+			ctx.fillStyle = "black"
+			ctx.fillText(bigPoints1,280,350);
+			ctx.fillText(bigPoints2,680,350);
 	})
 })
 
