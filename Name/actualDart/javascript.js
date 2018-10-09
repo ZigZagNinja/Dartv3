@@ -35,7 +35,7 @@ ctx.fillText(smallPoints2,610,300);
 ctx.font = "30px Arial";
 ctx.fillStyle = "black"
 ctx.fillText(bigPoints1,245,350);
-ctx.fillText(bigPoints2,645,350);;
+ctx.fillText(bigPoints2,645,350);
 
 
 //design
@@ -105,7 +105,8 @@ let submitbutton = new CanvasSubmit( canvas, {
     		if(smallPoints2 === 0){bigPoints2++; ; smallPoints1 = 301; smallPoints2 = 301}
 
 
-    		ctx.clearRect(500,175,860,300);
+    		ctx.clearRect(150,200,600,200);
+    	
 
 	    	//Display current points
 			//big
@@ -118,6 +119,7 @@ let submitbutton = new CanvasSubmit( canvas, {
 			ctx.font = "30px Arial";
 			ctx.fillStyle = "black"
 			ctx.fillText(bigPoints1,245,350);
+			ctx.fillText(bigPoints2,645,350);
     	}
     } )
 } );
