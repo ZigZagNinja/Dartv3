@@ -88,7 +88,7 @@ let input4player2 = new CanvasText( canvas, {
 
 let submitbutton = new CanvasSubmit( canvas, {
     x: 345,
-    y: 500,
+    y: 450,
     width: 200,
     height: 25,
     placeholder: 'Submit',
