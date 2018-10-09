@@ -53,17 +53,17 @@ ctx.fill();
 
 //input
 let input4player1 = new CanvasText( canvas, {
-    x: 500,
+    x: 300,
     y: 500,
-    width: 200,
+    width: 100,
     placeholder: 0
 } );
 
 //input
 let input4player2 = new CanvasText( canvas, {
-    x: 1150,
+    x: 500,
     y: 500,
-    width: 200,
+    width: 100,
     placeholder: 0
 } );
 
