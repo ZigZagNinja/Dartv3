@@ -112,14 +112,14 @@ let submitbutton = new CanvasSubmit( canvas, {
 			//big
 			ctx.font = "60px Arial";
 			ctx.fillStyle = "black"
-			ctx.fillText(smallPoints1,210,300);
-			ctx.fillText(smallPoints2,610,300);
+			ctx.fillText(smallPoints1,235,300);
+			ctx.fillText(smallPoints2,635,300);
 
 			//small
 			ctx.font = "30px Arial";
 			ctx.fillStyle = "black"
-			ctx.fillText(bigPoints1,245,350);
-			ctx.fillText(bigPoints2,645,350);
+			ctx.fillText(bigPoints1,280,350);
+			ctx.fillText(bigPoints2,680,350);
     	}
     } )
 } );
