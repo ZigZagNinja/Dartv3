@@ -45,29 +45,13 @@ ctx.fill();
 
 
 //choose between 501 and 301
-let threeoneButton = new CanvasSubmit(canvas, {
-	x: 0, 
-	y: window.innerHeight-100,
-	width: 100,
-	height: 100,
-	placeholder: '301',
-	onSubmit: (function(){
-		smallPoints1 = 301;
-		smallPoints2 = 301;
-	})
-})
+ctx.fillStyle = "darkred";
+ctx.rect(0, window.innerHeight-100, 100, 100);
+ctx.fill();
 
-let fiveoneButton = new CanvasSubmit(canvas, {
-	x: window.innerWidth-100, 
-	y: window.innerHeight-100,
-	width: 100,
-	height: 100,
-	placeholder: '501',
-	onSubmit: (function(){
-		smallPoints1 = 501;
-		smallPoints2 = 501;
-	})
-})
+ctx.fillStyle = "darkred";
+ctx.rect(window.innerWidth-100, window.innerHeight-100, 100, 100);
+ctx.fill();
 
 
 //input
