@@ -26,16 +26,16 @@ let bigPoints2 = 0;
 
 //Display current points
 //big
-ctx.font = "50px Arial";
+ctx.font = "60px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(smallPoints1,210,350);
-ctx.fillText(smallPoints2,610,350);
+ctx.fillText(smallPoints1,210,300);
+ctx.fillText(smallPoints2,610,300);
 
 //small
-ctx.font = "20px Arial";
+ctx.font = "30px Arial";
 ctx.fillStyle = "black"
-ctx.fillText(bigPoints1,245,400);
-ctx.fillText(bigPoints2,645,400);;
+ctx.fillText(bigPoints1,245,350);
+ctx.fillText(bigPoints2,645,350);;
 
 
 //design
@@ -73,7 +73,7 @@ let fiveoneButton = new CanvasSubmit(canvas, {
 //input
 let input4player1 = new CanvasText( canvas, {
     x: 200,
-    y: 500,
+    y: 450,
     width: 100,
     placeholder: 0
 } );
@@ -81,16 +81,16 @@ let input4player1 = new CanvasText( canvas, {
 //input
 let input4player2 = new CanvasText( canvas, {
     x: 600,
-    y: 500,
+    y: 450,
     width: 100,
     placeholder: 0
 } );
 
 let submitbutton = new CanvasSubmit( canvas, {
-    x: 775,
-    y: 700,
-    width: 300,
-    height: 50,
+    x: 345,
+    y: 500,
+    width: 200,
+    height: 25,
     placeholder: 'Submit',
     onSubmit: ( function() {
 
@@ -109,15 +109,15 @@ let submitbutton = new CanvasSubmit( canvas, {
 
 	    	//Display current points
 			//big
-			ctx.font = "50px Arial";
+			ctx.font = "60px Arial";
 			ctx.fillStyle = "black"
-			ctx.fillText(smallPoints1,window.innerWidth/2-450,800);
-			ctx.fillText(smallPoints2,window.innerWidth/2+200,800);
+			ctx.fillText(smallPoints1,210,300);
+			ctx.fillText(smallPoints2,610,300);
 
-	    	ctx.font = "20px Arial";
+			//small
+			ctx.font = "30px Arial";
 			ctx.fillStyle = "black"
-			ctx.fillText(bigPoints1,window.innerWidth/2-390,1000);
-			ctx.fillText(bigPoints2,window.innerWidth/2+260,1000);
+			ctx.fillText(bigPoints1,245,350);
     	}
     } )
 } );
